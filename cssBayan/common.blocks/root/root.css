@@ -1,0 +1,17 @@
+:root {
+  --main-background: #fefefe;
+  --primary-color-canvas: #f6f8fa;
+  --font-family: Arial, sans-serif;
+  --font-color: #57606a;
+}
+
+body {
+  background-color: var(--main-background);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--font-color);
+  font-family: var(--font-family);
+}
