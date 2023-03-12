@@ -1,0 +1,20 @@
+@import "root.css";
+@import "../../common.blocks/accordion/__item/__item";
+@import "../../common.blocks/accordion/accordion.css";
+@import "../../common.blocks/accordion/accordion.css";
+@import "../../common.blocks/accordion/__header/__header.css";
+@import "../../common.blocks/accordion/__content/__content.css";
+
+body {
+  background-color: var(--main-background);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--font-color);
+}
+
+p {
+  color: var(--font-color);
+}

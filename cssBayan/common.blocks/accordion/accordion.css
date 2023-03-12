@@ -1,0 +1,5 @@
+.accordion {
+  flex-direction: column;
+  display: flex;
+  color: var(--primary-color-canvas);
+}

@@ -1,0 +1,11 @@
+@import "../__content/__content.css";
+
+.accordion__header {
+  background-color: var(--main-background);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion__header:hover + .accordion__content {
+  display: block;
+}
