@@ -4,6 +4,7 @@
   transition: var(--transition);
   display: flex;
   flex-direction: column;
+  justify-content: end;
 }
 
 .accordion__item > input:checked ~ label > .accordion__content {
