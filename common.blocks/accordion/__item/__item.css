@@ -1,12 +1,10 @@
 .accordion__item {
   border: 1px solid var(--border-color);
   margin-bottom: 10px;
-}
-
-.accordion__item {
   padding-bottom: 0.5em;
   transition: var(--transition);
   overflow: hidden;
+  position: relative;
 }
 
 .accordion__item:first-child {

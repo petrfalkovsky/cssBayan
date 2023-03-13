@@ -4,9 +4,15 @@
 @import "../../common.blocks/accordion/__header/__header.css";
 @import "../../common.blocks/accordion/__content/__content.css";
 @import "../../common.blocks/accordion/__img/__img.css";
+@import "../../common.blocks/accordion/__icon-close/__icon-close.css";
+@import "../../pad.blocks/__header/__header.css";
+@import "../../pad.blocks/icon-close/__icon-close.css";
+@import "../../mobile.blocks/__icon-close/__icon-close.css";
+@import "../../mobile.blocks/__header/__header.css";
 
 body {
   background-color: var(--main-background);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -27,4 +33,7 @@ wrapper {
 .container {
   max-width: 40rem;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 600px;
 }

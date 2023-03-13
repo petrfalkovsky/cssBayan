@@ -1,0 +1,5 @@
+@media (max-width: 445px) {
+  .accordion__header {
+    font-size: 0.8rem;
+  }
+}
