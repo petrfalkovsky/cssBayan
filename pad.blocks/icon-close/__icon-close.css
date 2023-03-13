@@ -1,0 +1,6 @@
+@media (max-width: 820px) {
+  .accordion__icon-close {
+    top: 13rem;
+    right: 2rem;
+  }
+}
