@@ -1,11 +1,30 @@
 @import "../__content/__content.css";
 
 .accordion__header {
-  background-color: var(--main-background);
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  color: var(--font-color);
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+  background-color: var(--second-color-canvas);
   padding: 10px;
   cursor: pointer;
 }
 
-.accordion__header:hover + .accordion__content {
-  display: block;
+.accordion:hover .accordion__header {
+  color: var(--hover);
+  transition: var(--transition);
+}
+
+.accordion__item > input:checked ~ label > .accordion__header {
+  color: var(--active);
+  transition: var(--transition);
+}
+
+.accordion__item:hover .accordion__header {
+  color: var(--active);
+  transition: var(--transition);
 }

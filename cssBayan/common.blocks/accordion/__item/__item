@@ -2,3 +2,26 @@
   border: 1px solid var(--border-color);
   margin-bottom: 10px;
 }
+
+.accordion__item {
+  padding-bottom: 0.5em;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.accordion__item:first-child {
+  height: 100px;
+}
+
+.accordion__header:first-child {
+  overflow: visible;
+}
+
+.accordion__item > input {
+  display: none;
+}
+
+.accordion__item:active > * {
+  opacity: 0.5;
+  transition: var(--transition);
+}

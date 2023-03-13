@@ -1,4 +1,21 @@
 .accordion__content {
-  display: none;
-  padding: 10px;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__item > input:checked ~ label > .accordion__content {
+  padding: 1em 0;
+  color: var(--active);
+  height: 27.5rem;
+  transition: var(--transition);
+}
+
+.accordion__item:hover .accordion__content {
+  padding: 1em 0;
+  color: var(--active);
+  height: var(--height);
+  transition: var(--transition);
 }
