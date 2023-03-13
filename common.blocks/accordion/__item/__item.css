@@ -15,6 +15,7 @@
 
 .accordion__header:first-child {
   overflow: visible;
+  line-height: 30px;
 }
 
 .accordion__item > input {

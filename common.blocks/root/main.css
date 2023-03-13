@@ -1,6 +1,5 @@
 @import "root.css";
-@import "../../common.blocks/accordion/__item/__item";
-@import "../../common.blocks/accordion/accordion.css";
+@import "../../common.blocks/accordion/__item/__item.css";
 @import "../../common.blocks/accordion/accordion.css";
 @import "../../common.blocks/accordion/__header/__header.css";
 @import "../../common.blocks/accordion/__content/__content.css";
