@@ -28,3 +28,15 @@
   color: var(--active);
   transition: var(--transition);
 }
+
+@media (max-width: 820px) {
+  .accordion__header {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .accordion__header {
+    font-size: 0.8rem;
+  }
+}
