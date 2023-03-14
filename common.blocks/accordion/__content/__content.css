@@ -20,3 +20,14 @@
   height: var(--height);
   transition: var(--transition);
 }
+
+@media (hover: none) {
+  /* стили, которые будут применяться только на тач-устройствах */
+  .accordion__item:hover .accordion__content {
+    /* стили, которые не будут применяться на тач-устройствах */
+    padding: 1em 0;
+    color: var(--active);
+    height: var(--height);
+    transition: var(--transition);
+  }
+}

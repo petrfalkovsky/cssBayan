@@ -1,5 +1,4 @@
 .accordion__item {
-  border: 0.05rem solid var(--border-color);
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
   transition: var(--transition);
@@ -8,11 +7,6 @@
 
 .accordion__item:first-child {
   height: 5rem;
-}
-
-.accordion__header:first-child {
-  overflow: visible;
-  line-height: 1.8rem;
 }
 
 .accordion__item > input {
