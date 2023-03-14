@@ -1,0 +1,53 @@
+@import "../__content/__content.css";
+
+.accordion__header {
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  color: var(--font-color);
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+  background-color: var(--second-color-canvas);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.accordion:hover .accordion__header {
+  color: var(--hover);
+  transition: var(--transition);
+}
+
+.accordion__header:first-child {
+  overflow: visible;
+  line-height: 1.8rem;
+}
+
+.accordion__item > input:checked ~ label > .accordion__header {
+  color: var(--active);
+  transition: var(--transition);
+}
+
+.accordion__item:hover .accordion__header {
+  color: var(--active);
+  transition: var(--transition);
+}
+
+#header .accordion__header {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+@media (hover: none) {
+  /* стили, которые будут применяться только на тач-устройствах */
+  /* стили с :hover, которые не будут применяться на тач-устройствах */
+  .accordion__item:hover .accordion__header {
+    color: var(--active);
+    transition: var(--transition);
+  }
+  .accordion:hover .accordion__header {
+    color: var(--hover);
+    transition: var(--transition);
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  --main-background: #fefefe;
+  --primary-color-canvas: #f6f8fa;
+  --second-color-canvas: #edf3f3;
+  --hover: #1272a9;
+  --active: #37afab;
+  --font-family: Arial, sans-serif;
+  --font-color: #57606a;
+  --border-color: rgba(27, 31, 36, 0.15);
+  --height: 20rem;
+  --transition: all 0.5s ease;
+  --box-shadow: 0 0 1.5rem #888888;
+}

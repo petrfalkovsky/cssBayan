@@ -1,0 +1,61 @@
+.accordion__content {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.accordion__item > input:checked ~ label > .accordion__content {
+  height: 0;
+  color: var(--active);
+  height: 22.5rem;
+  transition: var(--transition);
+}
+
+.accordion__item:hover .accordion__content {
+  color: var(--active);
+  height: var(--height);
+  transition: var(--transition);
+}
+
+@media (hover: none) {
+  /* стили, которые будут применяться только на тач-устройствах */
+  .accordion__content {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .accordion__item > input:checked ~ label > .accordion__content {
+    color: var(--active);
+    height: 22.5rem;
+    transition: var(--transition);
+  }
+
+  .accordion__item > input:not(:checked) ~ label > .accordion__content {
+    height: 0;
+    transition: var(--transition);
+    overflow: hidden;
+  }
+
+  .accordion__item > label {
+    cursor: pointer;
+  }
+
+  .accordion__item > label:focus {
+    outline: none;
+  }
+
+  .accordion__item > input:checked + label {
+    color: var(--active);
+  }
+  /* стили с :hover, которые не будут применяться на тач-устройствах */
+  .accordion__item:hover > input:not(:checked) + label {
+    color: var(--active);
+  }
+}

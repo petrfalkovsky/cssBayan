@@ -1,0 +1,19 @@
+.accordion__item {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: var(--transition);
+  position: relative;
+}
+
+.accordion__item:first-child {
+  height: 5rem;
+}
+
+.accordion__item > input {
+  opacity: 0;
+}
+
+.accordion__item:active > * {
+  opacity: 0.5;
+  transition: var(--transition);
+}

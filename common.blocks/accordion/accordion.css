@@ -1,0 +1,6 @@
+.accordion {
+  flex-direction: column;
+  display: flex;
+  user-select: none;
+  color: var(--primary-color-canvas);
+}
