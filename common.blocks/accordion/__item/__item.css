@@ -1,19 +1,19 @@
 .accordion__item {
-  border: 1px solid var(--border-color);
-  margin-bottom: 10px;
-  padding-bottom: 0.5em;
+  border: 0.05rem solid var(--border-color);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
   transition: var(--transition);
   overflow: hidden;
   position: relative;
 }
 
 .accordion__item:first-child {
-  height: 100px;
+  height: 5rem;
 }
 
 .accordion__header:first-child {
   overflow: visible;
-  line-height: 30px;
+  line-height: 1.8rem;
 }
 
 .accordion__item > input {
