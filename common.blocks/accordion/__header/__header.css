@@ -19,6 +19,11 @@
   transition: var(--transition);
 }
 
+.accordion__header:first-child {
+  overflow: visible;
+  line-height: 1.8rem;
+}
+
 .accordion__item > input:checked ~ label > .accordion__header {
   color: var(--active);
   transition: var(--transition);
@@ -27,4 +32,22 @@
 .accordion__item:hover .accordion__header {
   color: var(--active);
   transition: var(--transition);
+}
+
+#header .accordion__header {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+@media (hover: none) {
+  /* стили, которые будут применяться только на тач-устройствах */
+  /* стили с :hover, которые не будут применяться на тач-устройствах */
+  .accordion__item:hover .accordion__header {
+    color: var(--active);
+    transition: var(--transition);
+  }
+  .accordion:hover .accordion__header {
+    color: var(--hover);
+    transition: var(--transition);
+  }
 }

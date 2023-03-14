@@ -30,3 +30,17 @@
 .accordion__item:hover .accordion__icon-close {
   transform: rotate(0deg);
 }
+
+@media (hover: none) {
+  /* стили, которые будут применяться только на тач-устройствах */
+
+  /* стили, которые не будут применяться на тач-устройствах */
+  .accordion__item:hover .accordion__icon-close {
+    transform: rotate(0deg);
+  }
+  .accordion:hover .accordion__icon-close {
+    opacity: 1;
+    pointer-events: all;
+    transition: var(--transition);
+  }
+}
