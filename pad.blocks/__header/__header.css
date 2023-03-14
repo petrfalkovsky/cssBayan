@@ -2,10 +2,4 @@
   .accordion__header {
     font-size: 1.2rem;
   }
-
-  .accordion__icon-close {
-    position: absolute;
-    margin-top: -4rem;
-    margin-left: 29.5rem;
-  }
 }
