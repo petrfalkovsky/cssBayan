@@ -21,6 +21,7 @@
 }
 
 @media (hover: none) {
+  /* стили, которые будут применяться только на тач-устройствах */
   .accordion__content {
     height: 0;
     overflow: hidden;
@@ -53,15 +54,8 @@
   .accordion__item > input:checked + label {
     color: var(--active);
   }
-
+  /* стили с :hover, которые не будут применяться на тач-устройствах */
   .accordion__item:hover > input:not(:checked) + label {
     color: var(--active);
-  }
-  .accordion__item:hover .accordion__content {
-    /* стили, которые не будут применяться на тач-устройствах */
-    /* padding: 1em 0;
-    color: var(--active);
-    height: var(--height);
-    transition: var(--transition); */
   }
 }

@@ -41,7 +41,7 @@
 
 @media (hover: none) {
   /* стили, которые будут применяться только на тач-устройствах */
-  /* стили, которые не будут применяться на тач-устройствах */
+  /* стили с :hover, которые не будут применяться на тач-устройствах */
   .accordion__item:hover .accordion__header {
     color: var(--active);
     transition: var(--transition);
