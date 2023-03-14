@@ -5,12 +5,12 @@
   text-align: center;
   cursor: pointer;
   justify-content: space-between;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--font-color);
   transition: var(--transition);
   box-shadow: var(--box-shadow);
   background-color: var(--second-color-canvas);
-  padding: 10px;
+  padding: 0.5rem;
   cursor: pointer;
 }
 

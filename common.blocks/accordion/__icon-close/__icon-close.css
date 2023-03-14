@@ -5,12 +5,16 @@
 }
 
 .accordion__icon-close {
-  position: absolute;
-  top: 9rem;
-  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-bottom: -2.5rem;
   transform: translateY(-50%) rotate(45deg);
-  width: 20px;
-  height: 20px;
+  width: 1rem;
+  height: 1rem;
   background: url("../../../assets/icons/close-icon.png") center no-repeat;
   opacity: 0.2;
   pointer-events: none;
@@ -19,7 +23,6 @@
 }
 
 .accordion__item > input:checked ~ label .accordion__icon-close {
-  position: relative;
   transform: rotate(0deg);
   transition: var(--transition);
 }
